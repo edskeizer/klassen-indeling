@@ -19,6 +19,7 @@ RUN npm install
 COPY . /app
 
 # Install necessary CLI to be able to build the app
+RUN npm install --save-dev --silent @angular-devkit/build-angular
 RUN npm install -g --silent @angular/cli
 
 # generate build
