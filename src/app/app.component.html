@@ -37,14 +37,20 @@
           Excel-bestand</a>), de namen van de leerlingen en de adressen. Die spreadsheet
         upload je naar de tool, en die verzint een goed tijdslot.
       </p>
-      <ngx-dropzone [multiple]="false" [accept]="'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'"
-        (change)="onSelect($event)">
+      <ngx-dropzone class="mb-3" [multiple]="false"
+        [accept]="'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'" (change)="onSelect($event)">
         <ngx-dropzone-label>Sleep het Excel (.xlsx) bestand hier naar toe (of klik hier). Gebruik het voorbeeld
           XLSX-bestand
           (zie
           boven)</ngx-dropzone-label>
       </ngx-dropzone>
 
+      <p>Gebruik je ESIS? Dan kun je ook dit <a
+          href="assets/VO_export_Leerlingverdeling_lockout_geautomatiseerd.xml">'Vrije overzicht' XML-bestand
+          downloaden</a>
+        (met dank aan Harm Hofstede). <a
+          href="https://support.rovict.nl/hc/nl/articles/360002273451-Hoe-importeer-ik-een-Vrij-Overzicht-"
+          target="_blank">Zie hier voor meer informatie.</a></p>
       <br>
 
       Algoritme in PHP door <a href="https://github.com/bslagter" target="_blank">Bert Slagter</a>, veel dank!<br>

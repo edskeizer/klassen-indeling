@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<EsisVrijeOverzichten xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="esisnl/EsisVrijeOverzichten.xsd">
+  <VrijOverzicht>
+    <Naam>Leerlingverdeling lockout geautomatiseerd</Naam>
+    <Trefwoorden>lockout</Trefwoorden>
+    <Omschrijving>Leerlingen per groep op basis van beginletter achternaam</Omschrijving>
+    <VrijOverzichtModuleSourceNaam>LEERLINGEN</VrijOverzichtModuleSourceNaam>
+    <ZoekerControl>0</ZoekerControl>
+    <Lettertype>ARIAL</Lettertype>
+    <Lettergrootte>8</Lettergrootte>
+    <IsLandscape>false</IsLandscape>
+    <ToonSchoolLogo>false</ToonSchoolLogo>
+    <ToonSchoolNaam>false</ToonSchoolNaam>
+    <ToonPaginanummers>false</ToonPaginanummers>
+    <ToonDatum>false</ToonDatum>
+    <ToonRegelVolgnummers>false</ToonRegelVolgnummers>
+    <ToonBorders>false</ToonBorders>
+    <VrijOverzichtVelden>
+      <VrijOverzichtVeld>
+        <KolomSourceNaam>HuidigeBasisGroep</KolomSourceNaam>
+        <RubriekSourceNaam>LEERLING</RubriekSourceNaam>
+        <Prioriteit>-2147483648</Prioriteit>
+        <IsZichtbaar>true</IsZichtbaar>
+        <Sortering>0</Sortering>
+        <NieuweRegelofPagina>0</NieuweRegelofPagina>
+        <MoetDoortellen>true</MoetDoortellen>
+        <WeergaveVolgorde>0</WeergaveVolgorde>
+        <AangepasteKolomLabel>Huidige basisgroep</AangepasteKolomLabel>
+        <KolomBreedte>250</KolomBreedte>
+      </VrijOverzichtVeld>
+      <VrijOverzichtVeld>
+        <KolomSourceNaam>VolledigeNaam</KolomSourceNaam>
+        <RubriekSourceNaam>LEERLING</RubriekSourceNaam>
+        <Prioriteit>-2147483648</Prioriteit>
+        <IsZichtbaar>true</IsZichtbaar>
+        <Sortering>0</Sortering>
+        <NieuweRegelofPagina>0</NieuweRegelofPagina>
+        <MoetDoortellen>true</MoetDoortellen>
+        <WeergaveVolgorde>1</WeergaveVolgorde>
+        <AangepasteKolomLabel>Volledige naam</AangepasteKolomLabel>
+        <KolomBreedte>250</KolomBreedte>
+      </VrijOverzichtVeld>
+      <VrijOverzichtVeld>
+        <KolomSourceNaam>AdresStraatEnHuisnummer</KolomSourceNaam>
+        <RubriekSourceNaam>LEERLING</RubriekSourceNaam>
+        <Prioriteit>-2147483648</Prioriteit>
+        <IsZichtbaar>true</IsZichtbaar>
+        <Sortering>0</Sortering>
+        <NieuweRegelofPagina>0</NieuweRegelofPagina>
+        <MoetDoortellen>true</MoetDoortellen>
+        <WeergaveVolgorde>2</WeergaveVolgorde>
+        <AangepasteKolomLabel>Adres straat en huisnummer</AangepasteKolomLabel>
+        <KolomBreedte>250</KolomBreedte>
+      </VrijOverzichtVeld>
+    </VrijOverzichtVelden>
+    <VrijOverzichtVoorwaarden>
+      <VrijOverzichtVoorwaarde>
+        <Operator>NOTNULL</Operator>
+      </VrijOverzichtVoorwaarde>
+    </VrijOverzichtVoorwaarden>
+  </VrijOverzicht>
+</EsisVrijeOverzichten>
