@@ -1,13 +1,61 @@
-<ngx-dropzone [multiple]="false" [accept]="'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'"
-  (change)="onSelect($event)">
-  <ngx-dropzone-label>Sleep het Excel (.xlsx) bestand hier naar toe (of klik hier). Gebruik het voorbeeld bestand (zie
-    onder)</ngx-dropzone-label>
-</ngx-dropzone>
-<a href="assets/voorbeeld.xlsx">Download voorbeeld bestand</a>.<br>
-<br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Klassen-indeler voor corona-regels</h1>
+      <p>
 
-Algoritme in PHP door <a href="https://github.com/bslagter" target="_blank">Bert Slagter</a>, veel dank!<br>
-Code omgezet van PHP naar Angular door <a href="https://github.com/edskeizer" target="_blank"> Eds Keizer</a> van <a
-  href="https://gek.nl">GeK</a>. <br>
-<br>
-Er wordt geen data geüpload naar een server. Het omzetten vindt plaats in je browser. Er is dus geen AVG van toepassing!
+        Op 21 april 2020 heeft de Nederlandse overheid <a
+          href="https://www.rijksoverheid.nl/actueel/nieuws/2020/04/21/maatregelen-corona-verlengd"
+          target="_blank">aangekondigd</a> dat de scholen vanaf 11 mei 2020 weer open mogen,
+        met daarbij de volgende voorwaarde:
+      </p>
+      <blockquote>
+        <em>
+
+          Basisscholen in het primair onderwijs halveren de groepsgrootte in de klas; kinderen gaan daarbij ongeveer 50%
+          van de tijd naar school. De dag dat de leerlingen niet op school verblijven, wordt op een andere wijze
+          ingevuld.
+          Die invulling wordt bepaald door de school en de leraren.
+        </em>
+      </blockquote>
+      <blockquote>
+        <em>
+
+          De praktische invulling van dit principe ligt de komende tijd bij de scholen. Zij gaan dit verder uitwerken;
+          daarbij kunnen verschillen tussen scholen ontstaan. Scholen informeren ouders over wat dit voor het onderwijs
+          van hun kinderen precies betekent.
+        </em>
+      </blockquote>
+      <p>
+        Het zou kunnen dat je als school de groepen in twee ongeveer even grote stukken wilt verdelen, en daarbij
+        rekening wilt houden met kinderen uit hetzelfde gezin, zodat die in hetzelfde tijdslot zitten. Dat is prettig
+        voor de ouders, maar scheelt ook vervoersbewegingen en verlaagt daarmee kans op besmetting.
+      </p>
+      <h2>Hoe werkt het</h2>
+      <p>
+        Je maakt een spreadsheet met daarin alle klassen (<a href="assets/voorbeeld.xlsx">download voorbeeld
+          Excel-bestand</a>), de namen van de leerlingen en de adressen. Die spreadsheet
+        upload je naar de tool, en die verzint een goed tijdslot.
+      </p>
+      <ngx-dropzone [multiple]="false" [accept]="'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'"
+        (change)="onSelect($event)">
+        <ngx-dropzone-label>Sleep het Excel (.xlsx) bestand hier naar toe (of klik hier). Gebruik het voorbeeld
+          XLSX-bestand
+          (zie
+          boven)</ngx-dropzone-label>
+      </ngx-dropzone>
+
+      <br>
+
+      Algoritme in PHP door <a href="https://github.com/bslagter" target="_blank">Bert Slagter</a>, veel dank!<br>
+      Code omgezet van PHP naar Angular door <a href="https://github.com/edskeizer" target="_blank"> Eds Keizer</a> van
+      <a href="https://gek.nl">GeK</a>. <br>
+      Broncode: <a
+        href="https://github.com/edskeizer/klassen-indeling">https://github.com/edskeizer/klassen-indeling</a><br>
+      <br>
+      <strong>Er wordt geen data geüpload naar een server. Het omzetten vindt plaats in je browser. Er is dus geen AVG
+        van
+        toepassing!</strong>
+    </div>
+  </div>
+</div>
