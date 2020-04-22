@@ -1,27 +1,27 @@
-# Klas
+# Klassen-indeler voor corona-regels
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+Op 21 april 2020 heeft de Nederlandse overheid
+[aangekondigd](https://www.rijksoverheid.nl/actueel/nieuws/2020/04/21/maatregelen-corona-verlengd)
+dat de scholen vanaf 11 mei 2020 weer open mogen, met daarbij de volgende voorwaarde:
 
-## Development server
+> Basisscholen in het primair onderwijs halveren de groepsgrootte in de klas; kinderen gaan daarbij
+> ongeveer 50% van de tijd naar school. De dag dat de leerlingen niet op school verblijven, wordt op
+> een andere wijze ingevuld. Die invulling wordt bepaald door de school en de leraren.
+>
+> De praktische invulling van dit principe ligt de komende tijd bij de scholen. Zij gaan dit verder
+> uitwerken; daarbij kunnen verschillen tussen scholen ontstaan. Scholen informeren ouders over wat
+> dit voor het onderwijs van hun kinderen precies betekent.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Het zou kunnen dat je als school de groepen in twee ongeveer even grote stukken wilt verdelen,
+en daarbij rekening wilt houden met kinderen uit hetzelfde gezin, zodat die in hetzelfde tijdslot zitten.
+Dat is prettig voor de ouders, maar scheelt ook vervoersbewegingen en verlaagt daarmee kans op besmetting.
 
-## Code scaffolding
+# Hoe werkt het
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Je maakt een spreadsheet met daarin alle klassen, de namen van de leerlingen en de adressen. Die spreadsheet
+geef je aan de tool, en die verzint een goed tijdslot.
 
-## Build
+De tool staat online op: https://klassenindeling.gek.nl
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Met dank aan Bert Slagter voor de PHP code https://github.com/bslagter
+Angular code door Eds Keizer https://github.com/edskeizer (GeK)
