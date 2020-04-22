@@ -29,7 +29,7 @@ Angular code door Eds Keizer https://github.com/edskeizer (GeK)
 
 # Zelf hosten?
 
-Wil je – *bijvoorbeeld om absoluut zeker te weten dat niets op andermans server draait* – deze tool zelf hosten of draaien in een container? Daarvoor kun je Docker gebruiken (lokaal) of Google Cloud Run (hosted op GCP).
+Wil je – *bijvoorbeeld om absoluut zeker te weten dat niets op andermans server draait* – deze tool zelf hosten of draaien in een container? Daarvoor kun je Docker gebruiken (lokaal), Netlify of Google Cloud Run (hosted op GCP).
 
 ## Build een container (Docker)
 ```
@@ -42,6 +42,12 @@ docker run --rm -p 80:8080  -it klassen-indeling
 ```
 
 Open [http://localhost](http://localhost) in je browser
+
+## Netlify
+Als je een Netlify account hebt en op onderstaande knop klikt, wordt deze applicatie op Netlify geplaatst:
+[![Run on Google Cloud](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rogiervandenberg/klassen-indeling)
+
+Netlify kun je gratis gebruiken 🎉
 
 ## Cloud Run
 Als je op de onderstaande Cloud Run-knop klikt, wordt deze applicatie in een Container gestopt, naar de Google Container Registry gepusht en op [Cloud Run](https://cloud.google.com/run) gestart, in jouw eigen Google Cloud Platform omgeving.
