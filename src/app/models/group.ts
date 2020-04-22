@@ -20,7 +20,6 @@ export class Group {
     }
     // const counts = [].fill(0, 0, nrSegments - 1);
     this.students.forEach(student => {
-      console.log(student.name, 'has', student.hasSegment())
       if (student.hasSegment()) {
         counts[student.segment]++;
       }
@@ -28,11 +27,9 @@ export class Group {
     this.students.forEach(student => {
       if (!student.hasSegment()) {
         const position = counts.indexOf(Math.min(...counts));
-        console.log(position);
         student.segment = position;
         counts[position]++;
       }
     });
-    console.log(counts);
   }
 }
