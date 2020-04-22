@@ -25,3 +25,27 @@ De tool staat online op: https://klassenindeling.gek.nl
 
 Met dank aan Bert Slagter voor de PHP code https://github.com/bslagter
 Angular code door Eds Keizer https://github.com/edskeizer (GeK)
+
+
+# Zelf hosten?
+
+Wil je – *bijvoorbeeld om absoluut zeker te weten dat niets op andermans server draait* – deze tool zelf hosten of draaien in een container? Daarvoor kun je Docker gebruiken (lokaal) of Google Cloud Run (hosted op GCP).
+
+## Build een container (Docker)
+```
+docker build -t klassen-indeling .
+```
+
+## Start de Container
+```
+docker run --rm -p 80:8080  -it klassen-indeling
+```
+
+Open [http://localhost](http://localhost) in je browser
+
+## Cloud Run
+Als je op de onderstaande Cloud Run-knop klikt, wordt deze applicatie in een Container gestopt, naar de Google Container Registry gepusht en op [Cloud Run](https://cloud.google.com/run) gestart, in jouw eigen Google Cloud Platform omgeving. Dit hele proces duurt ongeveer 10 minuten. Vooral de `docker build` stap is lang.
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/edskeizer/klassen-indeling)
+
+De eerste 2 miljoen requests per maand zijn gratis! 🎉
