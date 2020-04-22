@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Address } from '../models/address';
 import { Group } from '../models/group';
 import * as uuid4 from 'uuid4';
-import * as XLSX from 'XLSX';
+import * as XLSX from 'xlsx';
 import { Student } from '../models/student';
 
 @Injectable({
