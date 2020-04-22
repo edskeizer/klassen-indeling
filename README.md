@@ -46,6 +46,6 @@ Open [http://localhost](http://localhost) in je browser
 ## Cloud Run
 Als je op de onderstaande Cloud Run-knop klikt, wordt deze applicatie in een Container gestopt, naar de Google Container Registry gepusht en op [Cloud Run](https://cloud.google.com/run) gestart, in jouw eigen Google Cloud Platform omgeving.
 
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/rogiervandenberg/klassen-indeling)
 
 De eerste 2 miljoen requests per maand zijn gratis!
