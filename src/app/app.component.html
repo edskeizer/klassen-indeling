@@ -1,4 +1,5 @@
-<ngx-dropzone (change)="onSelect($event)">
+<ngx-dropzone [multiple]="false" [accept]="'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'"
+  (change)="onSelect($event)">
   <ngx-dropzone-label>Sleep het Excel (.xlsx) bestand hier naar toe (of klik hier). Gebruik het voorbeeld bestand (zie
     onder)</ngx-dropzone-label>
 </ngx-dropzone>
