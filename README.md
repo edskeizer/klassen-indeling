@@ -45,6 +45,7 @@ Open [http://localhost](http://localhost) in je browser
 
 ## Netlify
 Als je een Netlify account hebt en op onderstaande knop klikt, wordt deze applicatie op Netlify geplaatst:
+
 [![Run on Google Cloud](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rogiervandenberg/klassen-indeling)
 
 Netlify kun je gratis gebruiken 🎉

@@ -3,7 +3,7 @@
 #############
 
 # base image
-FROM node as build
+FROM node:12 as build
 
 # set working directory
 WORKDIR /app
@@ -14,11 +14,12 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install and cache app dependencies
 COPY package*.json ./app/
 RUN npm install
-RUN npm install -g @angular/cli@9.1.2
-RUN npm install --save-dev @angular-devkit/build-angular
 
 # add app
 COPY . /app
+
+# Install necessary CLI to be able to build the app
+RUN npm install -g --silent @angular/cli
 
 # generate build
 RUN ng build --prod --output-path=dist
@@ -34,6 +35,7 @@ FROM nginx:1.17.10-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 
+# In Cloud Run container instances, the PORT environment variable is always set to 8080, but for portability reasons set a value here
 ARG PORT=8080
 EXPOSE $PORT
 
